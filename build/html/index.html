@@ -22,6 +22,7 @@
   
 
   </head><body>
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -37,6 +38,165 @@
 documentation for details.</p>
 <div class="toctree-wrapper compound">
 </div>
+<p id="module-player.player">This module defines the League class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="player.player.Player">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">player.player.</span></span><span class="sig-name descname"><span class="pre">Player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">age</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#player.player.Player" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a player on a sports team.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="player.player.Player.age">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">age</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#player.player.Player.age" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the age of the player.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int: The age of the player instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="player.player.Player.name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#player.player.Player.name" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the name of the player.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: The name of the player instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="player.player.Player.position">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#player.player.Player.position" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the position of the player.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: The position of the player instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-team.team">This module defines the Team class.</p>
+<p>The Team class represents a sports team within a league. A team has a
+name, a city, and a collection of Player objects. This class provides
+functionality for storing basic team information and adding players to
+a roster.</p>
+<dl>
+<dt>Example:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">team</span> <span class="o">=</span> <span class="n">Team</span><span class="p">(</span><span class="s2">&quot;Falcons&quot;</span><span class="p">,</span> <span class="s2">&quot;Winnipeg&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">team</span><span class="o">.</span><span class="n">add_player</span><span class="p">(</span><span class="n">Player</span><span class="p">(</span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Forward&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">team</span><span class="p">)</span>
+<span class="go">Team: Falcons, City: Winnipeg, Players: [...]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="team.team.Team">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">team.team.</span></span><span class="sig-name descname"><span class="pre">Team</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">city</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#team.team.Team" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a sports team within a league.</p>
+<p>A team contains a name, a city, and a roster of Player instances.
+Players may be added using the add_player() method.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="team.team.Team.add_player">
+<span class="sig-name descname"><span class="pre">add_player</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#player.player.Player" title="player.player.Player"><span class="pre">Player</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#team.team.Team.add_player" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a player to the team’s roster.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>player (Player): The player to be added to the team.</p>
+</dd>
+<dt>Raises:</dt><dd><p>ValueError: Raised when the player is not a Player instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="team.team.Team.city">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">city</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#team.team.Team.city" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the city the team is based in.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: The city of the team.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="team.team.Team.name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#team.team.Team.name" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the team name.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>str: The name of the team.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="team.team.Team.players">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">players</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><a class="headerlink" href="#team.team.Team.players" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the list of players assigned to the team.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>list: A list of Player objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-league.league">This module defines the League class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="league.league.League">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">league.league.</span></span><span class="sig-name descname"><span class="pre">League</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#league.league.League" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a league in a sports organization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="league.league.League.add_team">
+<span class="sig-name descname"><span class="pre">add_team</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">team</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#league.league.League.add_team" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a team to the league.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>team (Team): The team to be added to the league.</p>
+</dd>
+<dt>Raises:</dt><dd><p>ValueError: Raised when the team is not an instance of Team.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="league.league.League.name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#league.league.League.name" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the name of the league.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="league.league.League.teams">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">teams</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><a class="headerlink" href="#league.league.League.teams" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the list of teams in the league.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>A list of Team objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-sports_app.sports_app">This module defines the SportsApp class.</p>
+<p>The SportsApp class provides the main window for the sports
+application. It allows interaction with teams, leagues, and players
+through a graphical user interface. This class is responsible for
+displaying a simple welcome message and demonstrating successful
+integration of all activity components.</p>
+<dl>
+<dt>Example:</dt><dd><p>To launch this GUI component, run the main application:</p>
+<blockquote>
+<div><p>$ python sports_application.py</p>
+</div></blockquote>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sports_app.sports_app.SportsApp">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sports_app.sports_app.</span></span><span class="sig-name descname"><span class="pre">SportsApp</span></span><a class="headerlink" href="#sports_app.sports_app.SportsApp" title="Link to this definition">¶</a></dt>
+<dd><p>Represents the main window of the application
+The SportsApp class displays a table of hard-coded player data,
+along with a button that triggers a welcome message dialog. This
+class is used to demonstrate GUI layout, widget initialization,
+and integration with the Player class.</p>
+</dd></dl>
+
 </section>
 
 
