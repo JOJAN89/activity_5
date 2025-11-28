@@ -22,8 +22,7 @@ class Team:
     """Represents a sports team within a league.
 
     A team contains a name, a city, and a roster of Player instances.
-    Players may be added using the add_player() method. This class is
-    used by the SportsApp GUI and League class for data integration.
+    Players may be added using the add_player() method. 
     """
 
     def __init__(self, name: str, city: str) -> None:
