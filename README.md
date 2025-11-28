@@ -19,5 +19,5 @@ a
    - Ensured all dependencies were included.
 
 
-   - Created a professional installer with license, before/after info screens.
+   - Created a professional installer with license, before and after info screens.
    - Packaged the executable and support files for end-user installation.
