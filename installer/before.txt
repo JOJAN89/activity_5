@@ -1,1 +1,5 @@
-Update this before file with details user should know before installing.
+This information file is important because it informs the user about key details
+before installation begins. It helps prepare the user for what the installer will do
+and provides context for the software they are about to install.
+
+Jojanpreet Kaur
