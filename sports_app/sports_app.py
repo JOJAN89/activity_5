@@ -12,7 +12,7 @@ Example:
         $ python sports_application.py
 """
 
-__author__ = "ACE Faculty"
+__author__ = "jojanpreet kaur"
 __version__ = "1.0.0"
 
 import sys
