@@ -90,9 +90,7 @@ class SportsApp(QWidget):
     def __show_message(self):
         """Displays a welcome message to the user.
 
-        This method is executed when the user clicks the button. It
-        displays a simple informational dialog confirming correct GUI
-        functionality.
+        This method is executed when the user clicks the button. 
 
         Returns:
             None
