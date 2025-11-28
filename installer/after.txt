@@ -3,4 +3,3 @@ successful and provides any final instructions or messages the user should know
 after the software has been installed.
 
 Jojanpreet Kaur
-ss

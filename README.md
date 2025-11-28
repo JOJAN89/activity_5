@@ -11,4 +11,13 @@ Jojanpreet kaur
 
 ## Additional Information
 
-[ Use this space to include additional information that may help in your learning. ]
+   - Reviewed and updated all class docstrings.
+   - Configured Sphinx (conf.py, index.rst) to automatically generate API documentation.
+a
+
+   - Packaged the entire application into a self-contained excel file.
+   - Ensured all dependencies were included.
+
+
+   - Created a professional installer with license, before/after info screens.
+   - Packaged the executable and support files for end-user installation.
